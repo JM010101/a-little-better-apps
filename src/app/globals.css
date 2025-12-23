@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --container-max-width: 1280px;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-[var(--container-max-width)] mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
