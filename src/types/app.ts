@@ -19,6 +19,7 @@ export interface App {
   average_rating?: number
   rating_count?: number
   user_rating?: number
+  user_review?: string | null
 }
 
 export interface AppCategory {
