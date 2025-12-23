@@ -182,7 +182,7 @@ export default async function AppDetailPage({ params }: AppDetailPageProps) {
                 )}
                 
                 <div className="flex items-center gap-6 mb-6">
-                  {app.average_rating && app.rating_count > 0 && (
+                  {app.average_rating && app.rating_count && app.rating_count > 0 && (
                     <div className="flex items-center gap-2">
                       <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                       <span className="font-semibold">{app.average_rating.toFixed(1)}</span>
